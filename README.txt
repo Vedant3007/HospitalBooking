@@ -1,5 +1,4 @@
 # Hospital Appointment Booking System
-
 This project is a Kubernetes-ready, microservices-based Healthcare Appointment Booking System. It includes authentication, backend API, email notifications, monitoring, and a React-based frontend — all containerized and orchestrated through Docker Compose (and compatible with Kubernetes).
 
 ---
@@ -18,7 +17,6 @@ This project is a Kubernetes-ready, microservices-based Healthcare Appointment B
 ---
 
 ## 1.	`auth-service/`
-
 - Purpose: Handles secure login with hardcoded user credentials (admin/doctor roles).
 - Tech: Node.js, Express, JWT
 - Port: `5001`
@@ -29,7 +27,6 @@ This project is a Kubernetes-ready, microservices-based Healthcare Appointment B
 
 
 ## 2.	`backend/`
-
 - Purpose: Manages appointment booking and fetching.
 - Tech: Node.js, Express, PostgreSQL
 - Port: `5000`
@@ -42,7 +39,6 @@ This project is a Kubernetes-ready, microservices-based Healthcare Appointment B
 
 
 ## 3. `database/`
-
 - Purpose: Initializes PostgreSQL with necessary tables.
 - Tech: PostgreSQL
 - Key Files:
@@ -51,7 +47,6 @@ This project is a Kubernetes-ready, microservices-based Healthcare Appointment B
 
 
 ## 4. `frontend/`
-
 - Purpose: React UI for login, booking, and viewing appointments
 - Tech: React, react-router-dom
 - Port: `3000`
@@ -64,7 +59,6 @@ This project is a Kubernetes-ready, microservices-based Healthcare Appointment B
 
 
 ## 5. `monitoring/`
-
 - Purpose: Prometheus setup for service-level monitoring
 - Tech: Prometheus
 - Port: `9090`
@@ -73,7 +67,6 @@ This project is a Kubernetes-ready, microservices-based Healthcare Appointment B
 
 
 ## 6. `notification-service/`
-
 - Purpose: Sends real-time email alerts to patients using SendGrid
 - Tech: Node.js, Express, SendGrid API
 - Port: `5002`
@@ -84,7 +77,6 @@ This project is a Kubernetes-ready, microservices-based Healthcare Appointment B
 
 
 ## 7. `docker-compose.yml`
-
 - Purpose: Launches all services locally
 - Recommended for demonstration and quick setup
 - Includes:
@@ -133,4 +125,4 @@ Description -
 
 Thank you for reviewing my project. It demonstrates a complete microservices-based hospital booking system with Kubernetes support, real-time alerts, observability, and secure design — all ready to scale in production environments.
 
-I would like to thank my peers for their active engagement and my tutors for their guidance and encouragement throughout this unit.
+I would like to thank my peers for their active engagement and my tutors for their guidance and encouragement throughout working on this project.
