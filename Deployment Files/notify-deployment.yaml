@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: notify-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: notify
+  template:
+    metadata:
+      labels:
+        app: notify
+    spec:
+      containers:
+        - name: notify
+          image: your-dockerhub-username/notification-service:latest
+          envFrom:
+            - configMapRef:
+                name: app-config
+            - secretRef:
+                name: app-secrets
+          ports:
+            - containerPort: 4001
