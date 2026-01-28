@@ -1,0 +1,18 @@
+/* frontend/src/Dashboard.css */
+.dashboard {
+  height: 100vh;
+  background-image: url('/hospital.jpg'); /* pulled from public folder */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.6); /* semi-transparent layer */
+  padding: 40px;
+  border-radius: 12px;
+  color: white;
+  text-align: center;
+}
